@@ -84,18 +84,91 @@ select {
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
 
 :root {
-    
+    /* colors */
+    --clr-primary-violet: hsl(256, 26%, 20%);
+    --clr-primary-blue: hsl(216, 30%, 68%);
+
+    --clr-neutral-dark-violet: hsl(270, 9%, 17%);
+    --clr-neutral-dark-grey-violet: hsl(273, 4%, 51%);
+    --clr-neutral-light-gray: hsl(0, 0%, 98%);
+
+    /* font stuff */
     --ff-primary: 'Karla', sans-serif;
     --ff-secondary: 'DM Serif Display', serif;
+
+    --fw-reg: 400;
+    --fw-bold: 700;
+
+    /* media query stuff */
+    --breakpoint-small: 24em;  /* 375px */
+    --breakpoint-desktop: 90em;  /* 1440px */
 }
 
 body {
     font-family: var(--ff-primary);
+    font-weight: var(--fw-reg);
 }
 
 h1, h2 {
     font-family: var(--ff-secondary);
+    font-weight: var(--fw-reg);
+    line-height: 1;
 }
+
+h1 {
+    font-size: 3rem;
+}
+
+.btn-link {
+    display: block;
+    color: var(--clr-neutral-light-gray);
+
+}
+
+.btn-link--light {
+
+}
+
+.btn-link--dark {
+
+}
+
+/***** UTILITIES *****/
+
+.container {
+    width: min(90%, 70rem);
+    margin: 0 auto;
+}
+
+/***** HEADER / NAV *****/
+
+
+
+/***** HERO SECTION *****/
+
+.hero {
+    background-color: var(--clr-primary-violet);
+    color: var(--clr-neutral-light-gray);
+
+    text-align: center;
+}
+
+
+/***** FEATURES SECTION *****/
+
+.features {
+}
+
+
+/***** FIND OUT MORE SECTION *****/
+
+.find-out-more {
+
+}
+
+/***** FOOTER *****/
+
+
 
 .attribution {
     font-size: 11px;
