@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
+
 /****** Andy Bell - a modern css reset file ******/
 /* https://piccalil.li/blog/a-modern-css-reset/ */
 
@@ -81,8 +83,6 @@ select {
 
 /***** BASICS *****/
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
-
 :root {
     /* colors */
     --clr-primary-violet: hsl(256, 26%, 20%);
@@ -111,7 +111,7 @@ body {
 
 h1, h2 {
     font-family: var(--ff-secondary);
-    font-weight: var(--fw-reg);
+    font-weight: var(--fw-bold);
     line-height: 1;
 }
 
@@ -119,24 +119,41 @@ h1 {
     font-size: 3rem;
 }
 
-.btn-link {
-    display: block;
-    color: var(--clr-neutral-light-gray);
-
+p {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-reg);
+    line-height: 1.7;
+    letter-spacing: 0.05rem;
 }
 
 .btn-link--light {
-
+    display: inline-block;
+    border: 3px solid var(--clr-neutral-light-gray);
+    margin-top: 2.5rem;
+    padding: 0.75rem 1.75rem;
+    color: var(--clr-neutral-light-gray);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8125rem;
+    letter-spacing: 0.2rem;
 }
 
 .btn-link--dark {
-
+    display: inline-block;
+    border: 3px solid var(--clr-primary-violet);
+    margin-top: 2.5rem;
+    padding: 0.75rem 1.75rem;
+    color: var(--clr-primary-violet);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8125rem;
+    letter-spacing: 0.2rem;
 }
 
 /***** UTILITIES *****/
 
 .container {
-    width: min(90%, 70rem);
+    width: min(95%, 70rem);
     margin: 0 auto;
 }
 
@@ -149,14 +166,24 @@ h1 {
 .hero {
     background-color: var(--clr-primary-violet);
     color: var(--clr-neutral-light-gray);
-
     text-align: center;
+    margin-bottom: 6rem;
+}
+
+.hero__content {
+    padding-block: 6rem;
+}
+
+.hero__text {
+    color: var(--clr-neutral-light-gray);
+    padding-top: 1em;
 }
 
 
 /***** FEATURES SECTION *****/
 
 .features {
+    
 }
 
 
