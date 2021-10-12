@@ -128,13 +128,14 @@ p {
 
 .btn-link--light {
     display: inline-block;
-    outline: 2px solid var(--clr-neutral-light-gray);
+    outline: 1.5px solid var(--clr-neutral-light-gray);
     margin-top: 2.5rem;
     padding: 0.75rem 1.75rem;
     color: var(--clr-neutral-light-gray);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 0.8125rem;
+    font-weight: var(--fw-bold);
     letter-spacing: 0.2rem;
 }
 
@@ -145,13 +146,14 @@ p {
 
 .btn-link--dark {
     display: inline-block;
-    outline: 2px solid var(--clr-primary-violet);
+    outline: 1.5px solid var(--clr-primary-violet);
     margin-top: 2.5rem;
-    padding: 0.75rem 1.75rem;
+    padding: 0.8rem 1.5rem;
     color: var(--clr-primary-violet);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 0.8125rem;
+    font-weight: var(--fw-bold);
     letter-spacing: 0.2rem;
 }
 
@@ -227,10 +229,18 @@ p {
 
 .find-out-more {
     background-color: var(--clr-primary-violet);
+    background-image: url('/images/bg-pattern-how-we-work-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
     color: var(--clr-neutral-light-gray);
     text-align: center;
     padding-block: 5rem;
     margin-block: 8rem;
+}
+
+.find-out-more h1 {
+    font-size: 2.5rem;
+    font-weight: var(--fw-reg);
 }
 
 /***** FOOTER *****/
