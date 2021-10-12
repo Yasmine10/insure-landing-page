@@ -256,7 +256,7 @@ p {
     font-size: 0.8125rem;
 }
 
-@media (min-width: 62.5em) {
+@media (min-width: 75em) {
     .nav {
         flex-wrap: nowrap;
         width: min(90%, 70rem);
@@ -342,7 +342,7 @@ p {
     position: relative;
 }
 
-@media (min-width: 62.5em) {
+@media (min-width: 75em) {
     .hero {
         background-image: url("/images/bg-pattern-intro-right-desktop.svg");
         background-repeat: no-repeat;
@@ -452,7 +452,7 @@ p {
     color: var(--clr-neutral-dark-grey-violet);
 }
 
-@media (min-width: 62.5em) {
+@media (min-width: 75em) {
     .features {
         text-align: start;
     }
@@ -490,7 +490,7 @@ p {
     font-weight: var(--fw-reg);
 }
 
-@media (min-width: 62.5em) {
+@media (min-width: 75em) {
     .find-out-more {
         background-image: url("/images/bg-pattern-how-we-work-desktop.svg");
         background-repeat: no-repeat;
@@ -585,7 +585,7 @@ footer {
     line-height: 2.2;
 }
 
-@media (min-width: 62.5em) {
+@media (min-width: 75em) {
     footer {
         background-image: url("/images/bg-pattern-footer-desktop.svg");
     }
