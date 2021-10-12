@@ -409,6 +409,34 @@ p {
     font-weight: var(--fw-reg);
 }
 
+@media (min-width: 90em) {
+    .find-out-more {
+        background-image: url('/images/bg-pattern-how-we-work-desktop.svg');
+        background-repeat: no-repeat;
+        background-position: top right;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+        padding-block: 4rem;
+        padding-inline: 4rem;
+
+        text-align: start;
+    }
+
+    .find-out-more h1 {
+        font-size: 4rem;
+        max-width: 35rem;
+    }
+
+    .find-out-more a {
+        flex-basis: 20%;
+        margin-top: 0;
+        text-align: center;
+    }
+}
+
 /***** FOOTER *****/
 
 footer {
