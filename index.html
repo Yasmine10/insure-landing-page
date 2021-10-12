@@ -9,6 +9,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="styles.css">
 
+    <script async type="text/javascript" src="navbarToggle.js"></script>
+
     <title>Frontend Mentor | Insure landing page</title>
 </head>
 
@@ -20,9 +22,10 @@
                 <img src="images/logo.svg" alt="" />
             </div>
             <div class="nav__toggle">
-                <span class="nav__toggle-btn"></span>
+                <img class="nav__toggle-icon-closed" src="/images/icon-hamburger.svg" alt="" />
+                <img class="nav__toggle-icon-opened nav__toggle-icon--hidden" src="/images/icon-close.svg" alt="" />
             </div>
-            <ul class="nav__list">
+            <ul id="navList" class="nav__list">
                 <li class="nav__item"><a href="#" class="nav__link">How we work</a></li>
                 <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
                 <li class="nav__item"><a href="#" class="nav__link">Account</a></li>
@@ -34,7 +37,7 @@
     <main>
 
         <section class="hero">
-            <img src="/images/image-intro-mobile.jpg"
+            <img class="hero__image" src="/images/image-intro-mobile.jpg"
                 srcset="/images/image-intro-mobile.jpg 375px, /images/image-intro-desktop.jpg 1440px"
                 alt="A family walking outside in cloudy weather">
             <div class="hero__content">
@@ -81,7 +84,7 @@
     </main>
 
     <footer>
-        <div class="footer__header">
+        <div class="footer__header container">
             <img class="footer__logo" src="/images/logo.svg" alt="">
             <div class="social-links">
                 <ul class="social-links__list">
@@ -92,7 +95,7 @@
                 </ul>
             </div>
         </div>
-        <div class="footer__content">
+        <div class="footer__content container">
             <div class="footer__item">
                 <h1 class="footer__item-title">Our company</h1>
                 <ul class="footer__list">
